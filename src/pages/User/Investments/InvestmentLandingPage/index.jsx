@@ -50,7 +50,8 @@ export const InvestmentLandingPage = () => {
           <section className="flex flex-col gap-6 md:gap-10">
             <div>
               <img
-                src="../../src/assets/images/investmentImg.svg"
+                src="/assets/images/investmentImg.svg"
+
                 className=""
                 alt="investmentImage"
                 draggable="false"
@@ -58,7 +59,7 @@ export const InvestmentLandingPage = () => {
             </div>
             <div className="flex lg:gap-[75px] lg:px-5 pxx-5 ">
               <img
-                src="../../src/assets/images/chooseImg.png"
+                src="/assets/images/chooseImg.svg"
                 className="]"
                 alt="investmentImage"
                 draggable="false"

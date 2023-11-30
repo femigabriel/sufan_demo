@@ -1,6 +1,5 @@
 import React from "react";
-import { Collapse, Space } from "antd";
-import { Input } from "antd";
+import { Collapse, Space, Input } from "antd";
 const text = (
   <p className="lg:w-[40em] text-base">
     Yes, you can try us for free for 30 days. If you want, we’ll provide you
@@ -60,7 +59,7 @@ export const FaqPage = () => {
               className="site-form w-[320px] "
               prefix={
                 <img
-                  src="../../src/assets/icons/searchIcon.svg"
+                  src="/assets/icons/searchIcon.svg"
                   draggable="false"
                   alt="searchIcon"
                 />
@@ -75,13 +74,13 @@ export const FaqPage = () => {
             expandIcon={({ isActive }) =>
               isActive ? (
                 <img
-                  src="../../src/assets/icons/minusCircle.svg"
+                  src="/assets/icons/minusCircle.svg"
                   draggable="false"
                   alt="plusCircle"
                 />
               ) : (
                 <img
-                  src="../../src/assets/icons/plusCircle.svg"
+                  src="/assets/icons/plusCircle.svg"
                   draggable="false"
                   alt="minusCircle"
                 />
@@ -111,13 +110,13 @@ export const FaqPage = () => {
             expandIcon={({ isActive }) =>
               isActive ? (
                 <img
-                  src="../../src/assets/icons/minusCircle.svg"
+                  src="/assets/icons/minusCircle.svg"
                   draggable="false"
                   alt="plusCircle"
                 />
               ) : (
                 <img
-                  src="../../src/assets/icons/plusCircle.svg"
+                  src="/assets/icons/plusCircle.svg"
                   draggable="false"
                   alt="minusCircle"
                 />
@@ -145,13 +144,13 @@ export const FaqPage = () => {
             expandIcon={({ isActive }) =>
               isActive ? (
                 <img
-                  src="../../src/assets/icons/minusCircle.svg"
+                  src="/assets/icons/minusCircle.svg"
                   draggable="false"
                   alt="plusCircle"
                 />
               ) : (
                 <img
-                  src="../../src/assets/icons/plusCircle.svg"
+                  src="/assets/icons/plusCircle.svg"
                   draggable="false"
                   alt="minusCircle"
                 />
@@ -179,13 +178,13 @@ export const FaqPage = () => {
             expandIcon={({ isActive }) =>
               isActive ? (
                 <img
-                  src="../../src/assets/icons/minusCircle.svg"
+                  src="/assets/icons/minusCircle.svg"
                   draggable="false"
                   alt="plusCircle"
                 />
               ) : (
                 <img
-                  src="../../src/assets/icons/plusCircle.svg"
+                  src="/assets/icons/plusCircle.svg"
                   draggable="false"
                   alt="minusCircle"
                 />
@@ -213,13 +212,13 @@ export const FaqPage = () => {
             expandIcon={({ isActive }) =>
               isActive ? (
                 <img
-                  src="../../src/assets/icons/minusCircle.svg"
+                  src="/assets/icons/minusCircle.svg"
                   draggable="false"
                   alt="plusCircle"
                 />
               ) : (
                 <img
-                  src="../../src/assets/icons/plusCircle.svg"
+                  src="/assets/icons/plusCircle.svg"
                   draggable="false"
                   alt="minusCircle"
                 />

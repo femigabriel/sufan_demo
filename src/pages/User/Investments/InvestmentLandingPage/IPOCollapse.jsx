@@ -80,7 +80,7 @@ const items = [
     label: (
       <div className=" py-5">
         <img
-          src="../../src/assets/images/image1.png"
+          src="/assets/images/image1.png"
           className="mb-5"
           alt="image1"
         />
@@ -110,13 +110,13 @@ const IPOCollapse = () => {
           expandIcon={({ isActive }) =>
             isActive ? (
               <img
-                src="../../src/assets/icons/arrowUp.svg"
+                src="/assets/icons/arrowUp.svg"
                 draggable="false"
                 alt="plusCircle"
               />
             ) : (
               <img
-                src="../../src/assets/icons/arrowDown.svg"
+                src="/assets/icons/arrowDown.svg"
                 draggable="false"
                 alt="minusCircle"
               />
@@ -130,7 +130,7 @@ const IPOCollapse = () => {
               label: (
                 <div className="w-full lg:w-[980p] py-">
                   <img
-                    src="../../src/assets/images/image1.png"
+                   src="/assets/images/image1.png"
                     className="my-5"
                     alt="image1"
                     draggable="false"
@@ -225,7 +225,7 @@ const IPOCollapse = () => {
               label: (
                 <div className="w-full lg:w-[980p] py-">
                   <img
-                    src="../../src/assets/images/image2.png"
+                    src="/assets/images/image2.png"
                     className="my-5"
                     alt="image1"
                     draggable="false"
@@ -242,13 +242,13 @@ const IPOCollapse = () => {
           expandIcon={({ isActive }) =>
             isActive ? (
               <img
-                src="../../src/assets/icons/arrowUp.svg"
+                src="/assets/icons/arrowUp.svg"
                 draggable="false"
                 alt="plusCircle"
               />
             ) : (
               <img
-                src="../../src/assets/icons/arrowDown.svg"
+              src="/assets/icons/arrowDown.svg"
                 draggable="false"
                 alt="minusCircle"
               />
@@ -261,7 +261,7 @@ const IPOCollapse = () => {
               label: (
                 <div className="w-full py-">
                   <img
-                    src="../../src/assets/images/image3.png"
+                    src="/assets/images/image3.png"
                     className="mb-5"
                     alt="image1"
                     draggable="false"
@@ -278,13 +278,14 @@ const IPOCollapse = () => {
           expandIcon={({ isActive }) =>
             isActive ? (
               <img
-                src="../../src/assets/icons/arrowUp.svg"
+             
+                src="/assets/icons/arrowUp.svg"
                 draggable="false"
                 alt="plusCircle"
               />
             ) : (
               <img
-                src="../../src/assets/icons/arrowDown.svg"
+                src="/assets/icons/arrowDown.svg"
                 draggable="false"
                 alt="minusCircle"
               />
@@ -297,7 +298,7 @@ const IPOCollapse = () => {
               label: (
                 <div className="w-full lg:w-[980p] py-">
                   <img
-                    src="../../src/assets/images/image4.png"
+                    src="/assets/images/image4.png"
                     className="my-5"
                     alt="image1"
                     draggable="false"
@@ -314,26 +315,3 @@ const IPOCollapse = () => {
   );
 };
 export default IPOCollapse;
-{
-  /* <Collapse
-        expandIcon={({ isActive }) =>
-          isActive ? (
-            <img
-              src="../../src/assets/icons/arrowUp.svg"
-              draggable="false"
-              alt="plusCircle"
-            />
-          ) : (
-            <img
-              src="../../src/assets/icons/arrowDown.svg"
-              draggable="false"
-              alt="minusCircle"
-            />
-          )
-        }
-        expandIconPosition="right"
-        items={items}
-        defaultActiveKey={["1"]}
-        onChange={onChange}
-      /> */
-}

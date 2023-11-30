@@ -40,7 +40,8 @@ export const StartInvestment = () => {
       </div>
 
       <img
-        src="../../src/assets/images/startInvestment.svg"
+               src="/assets/images/startInvestment.png"
+
         draggable="false"
         alt="serviceImage"
       />
