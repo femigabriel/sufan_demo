@@ -44,28 +44,28 @@ const text = (
     </div>
     <div className="grid grid-cols-2">
       <img
-        src="../../src/assets/images/case1.svg"
+        src="/assets/images/case1.svg"
         className="mb-5"
         alt="case"
         draggable="false"
 
       />
       <img
-        src="../../src/assets/images/case2.svg"
+        src="/assets/images/case2.svg"
         className="mb-5"
         alt="case"
         draggable="false"
 
       />
       <img
-        src="../../src/assets/images/case3.svg"
+          src="/assets/images/case3.svg"
         className="mb-5"
         alt="case"
         draggable="false"
 
       />
       <img
-        src="../../src/assets/images/case4.svg"
+         src="/assets/images/case4.svg"
         className="mb-5"
         alt="case"
         draggable="false"
