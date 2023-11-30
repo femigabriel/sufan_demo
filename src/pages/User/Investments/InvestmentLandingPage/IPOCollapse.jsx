@@ -11,10 +11,10 @@ import theme from "../../../../theme";
 const text = (
   <div className="py-">
     <div className="flex py-7  gap-10">
-      <img src="../../src/assets/images/investment1.svg" alt="serviceImage" />
+      <img src=" /assets/images/investment1.svg" alt="serviceImage" />
       <div className="lg:w-[36em] px-5">
         <img
-          src="../../src/assets/images/image1.png"
+          src="/assets/images/image1.png"
           className="mb-5"
           draggable="false"
 
@@ -128,7 +128,7 @@ const IPOCollapse = () => {
             {
               key: "1",
               label: (
-                <div className="w-full lg:w-[980p] py-">
+                <div className="w-full">
                   <img
                    src="/assets/images/image1.png"
                     className="my-5"
