@@ -14,7 +14,7 @@ import AdminDashboard from "./pages/Admin/Dashboard";
 import { PageNotFound } from "./pages/PageNotFound";
 import {InvestmentsPage} from "./pages/User/Investments";
 import {InvestmentLandingPage} from "./pages/User/Investments/InvestmentLandingPage";
-import {InvestmentsPurchasePage} from "./pages/User/Investments/Purchase";
+// import {InvestmentsPurchasePage} from "./pages/User/Investments/Purchase";
 
 const AllRoutes = () => {
   const { isLoggedIn, user } = useGetUser();
@@ -70,7 +70,7 @@ const AllRoutes = () => {
         <Route path="services" element={<ServicesPage />} />
         <Route path="investments" element={<InvestmentsPage />} />
         <Route path="investments/landing-page" element={<InvestmentLandingPage />} />
-        <Route path="investments/purchase" element={<InvestmentsPurchasePage />} />
+        {/* <Route path="investments/purchase" element={<InvestmentsPurchasePage />} /> */}
         <Route path="services/:id" element={<EachServices />} />
 
         <Route path="dashboard" element={
