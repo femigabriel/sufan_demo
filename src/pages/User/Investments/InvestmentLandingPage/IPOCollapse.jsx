@@ -206,13 +206,13 @@ const IPOCollapse = () => {
           expandIcon={({ isActive }) =>
             isActive ? (
               <img
-                src="../../src/assets/icons/arrowUp.svg"
+                src="/assets/icons/arrowUp.svg"
                 draggable="false"
                 alt="plusCircle"
               />
             ) : (
               <img
-                src="../../src/assets/icons/arrowDown.svg"
+                src="/assets/icons/arrowDown.svg"
                 draggable="false"
                 alt="minusCircle"
               />
