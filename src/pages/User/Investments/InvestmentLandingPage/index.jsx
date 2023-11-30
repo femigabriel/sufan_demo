@@ -50,17 +50,16 @@ export const InvestmentLandingPage = () => {
           <section className="flex flex-col gap-6 md:gap-10">
             <div>
               <img
-                src="/assets/images/investmentImg.svg"
-
+                src="/assets/images/investmentImg.png"
                 className=""
                 alt="investmentImage"
                 draggable="false"
               />
             </div>
-            <div className="flex lg:gap-[75px] lg:px-5 pxx-5 ">
+            <div className="flex lg:gap-[75px] lg:px-5 px-5 ">
               <img
-                src="/assets/images/chooseImg.svg"
-                className="]"
+               src="/assets/images/chooseImg.png"
+                className=""
                 alt="investmentImage"
                 draggable="false"
               />
@@ -92,6 +91,7 @@ export const InvestmentLandingPage = () => {
                   </Button>
                 </div>
               </div>
+
             </div>
           </section>
 
