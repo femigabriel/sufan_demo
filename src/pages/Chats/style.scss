@@ -1,0 +1,137 @@
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  @apply flex items-center justify-center;
+
+  .close-modal-btn {
+    // position: absolute;
+    // top: 1rem;
+    // right: 1rem;
+    @apply absolute top-2 right-2 lg:top-4 lg:right-4;
+  }
+}
+
+.chat-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  .form-group {
+    @apply border-none mx-3 bg-none;
+    // &,
+    // * {
+    //   background-color: #eaeaf0 !important;
+    // }
+  }
+  .chat-body {
+    flex-grow: 2;
+    overflow-y: auto;
+    // padding: 1rem 2rem;
+    @apply py-4 md:px-6 px-4;
+  }
+  .chat-form {
+    min-height: 50px;
+    // background: #ffffff;
+    // box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    // border-radius: 0 0 12px 0;
+    @apply px-2  my-5;
+
+    input {
+      @apply text-light-blue placeholder:text-light-blue
+    }
+  }
+}
+
+.message {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.7rem 0;
+  &.sender {
+    justify-content: flex-start;
+    .right {
+      align-items: flex-start;
+    }
+    .text {
+      border-radius: 0px 19px 19px 19px;
+    }
+  }
+  &.receiver {
+    justify-content: flex-end;
+    .right {
+      align-items: flex-end;
+    }
+    .text {
+      border-radius: 19px 0px 19px 19px;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  > .avatar {
+    // margin-right: ;
+    @apply mr-2;
+    width: 34px;
+    height: 34px;
+  }
+
+  .text {
+    padding: 0.5rem 1rem;
+    padding-right: 1.5rem;
+    width: 100%;
+    min-width: fit-content;
+    max-width: 400px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 6px 25px 80px rgba(62, 78, 97, 0.08);
+  }
+
+  .campaign {
+    padding: 1rem;
+    padding-right: 1.5rem;
+    width: 100%;
+    min-width: fit-content;
+    max-width: 400px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 6px 25px 80px rgba(62, 78, 97, 0.08);
+  }
+  .submission {
+    width: 100%;
+    min-width: fit-content;
+    max-width: 400px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 6px 25px 80px rgba(62, 78, 97, 0.08);
+  }
+
+  // .time {
+  //   margin-top: 0.3rem;
+  //   font-size: 12px;
+  //   // color: #fff;
+  //   // font-weight: 400;
+  // }
+  .images-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+    .img {
+      width: 64px;
+      height: 60px;
+      border-radius: 10px;
+    }
+  }
+}

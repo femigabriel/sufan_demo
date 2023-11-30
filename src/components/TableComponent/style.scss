@@ -1,0 +1,608 @@
+.my-table {
+  &.alignLastTdRight {
+    thead th:last-of-type {
+      border-radius: 0 4px 4px 0;
+      text-align: right;
+    }
+  }
+
+  .MuiCheckbox-root {
+    color: #fff;
+  }
+
+  .MuiPaper-root {
+    box-shadow: none;
+
+    .MuiPaper-elevation {
+      background-color: #243BBD !important;
+      color: #fff;
+    }
+
+    >div:nth-child(2) {
+      gap: 1rem;
+      margin: 0;
+
+      >div {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+
+
+  ::-webkit-scrollbar {
+    width: 0.45rem !important;
+    height: 0.45rem !important;
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.25rem !important;
+    @apply bg-secondary;
+  }
+
+  &.hideScrollbar {
+    ::-webkit-scrollbar {
+      display: none !important;
+    }
+  }
+
+
+
+  &.scrollX {
+    .MuiPaper-root div {
+      table {
+        border-collapse: separate;
+        border-spacing: 0 15px;
+        background: transparent !important;
+        border: none;
+        min-width: 1000px;
+
+      }
+    }
+  }
+
+  .MuiTablePagination-root {
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif !important;
+
+    svg {
+      fill: #fff !important;
+    }
+  }
+
+  button:disabled {
+    opacity: 0.4;
+  }
+
+  tbody {
+    tr {
+      @apply bg-secondary;
+
+    }
+
+    td:first-child,
+    th:first-child {
+      border-radius: 10px 0 0 10px;
+    }
+
+    td:last-child,
+    th:last-child {
+      border-radius: 0 10px 10px 0;
+    }
+
+
+    tr>td {
+      font-size: 14px;
+      font-weight: 500 !important;
+      font-family: 'Poppins', sans-serif !important;
+      // color: #fff !important;
+    }
+  }
+
+
+  thead {
+
+    th:first-of-type {
+      // border-radius: 4px 0 0 4px;
+      padding-left: 8px;
+    }
+
+    th:last-of-type {
+      // border-radius: 0 4px 4px 0;
+      text-align: left;
+    }
+
+    th {
+
+      button.MuiButton-root {
+        padding: 0;
+        width: max-content;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #fff !important;
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  td,
+  th {
+    font-weight: 500;
+    color: #fff !important;
+  }
+
+  td>div {
+    padding-left: 0.1rem;
+  }
+
+  .MUIDataTableFilterList-root {
+    gap: 0.5rem;
+    margin: 0;
+    // margin-bottom: 0.5rem;
+  }
+
+  .MuiToolbar-root {
+    padding: 0;
+    flex-wrap: wrap;
+
+    &>div:nth-child(2) {
+      justify-content: flex-end;
+      display: flex;
+    }
+  }
+
+  .drop-down-action,
+  .drop-down-wrapper {
+    width: max-content;
+    margin-left: auto;
+  }
+
+  tfoot.MuiTableFooter-root {
+    td>div {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    @media (max-width: 500px) {
+      .MuiToolbar-root {
+        justify-content: space-between;
+        width: 100%;
+
+        .MuiInputBase-root {
+          margin-right: 0;
+        }
+
+        p {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+}
+
+.mobile-table:last-child {
+  border: none !important;
+}
+// nth-last-child(1)
+
+.my-table2 {
+  &.alignLastTdRight {
+    thead th:last-of-type {
+      border-radius: 0 4px 4px 0;
+      text-align: right;
+    }
+  }
+
+  .MuiCheckbox-root {
+    color: #fff;
+  }
+
+  thead .MuiCheckbox-root {
+    color: #000;
+  }
+
+  .MuiPaper-root {
+    box-shadow: none;
+
+    .MuiPaper-elevation {
+      background-color: #243BBD !important;
+      color: #fff;
+    }
+
+    >div:nth-child(2) {
+      gap: 1rem;
+      margin: 0;
+
+      >div {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+
+
+  ::-webkit-scrollbar {
+    width: 0.45rem !important;
+    height: 0.45rem !important;
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.25rem !important;
+    @apply bg-secondary;
+  }
+
+  &.hideScrollbar {
+    ::-webkit-scrollbar {
+      display: none !important;
+    }
+  }
+
+
+
+  &.scrollX {
+    .MuiPaper-root div {
+      table {
+        border-collapse: separate;
+        border-spacing: 0 15px;
+        background: transparent !important;
+        border: none;
+        min-width: 1000px;
+
+      }
+    }
+  }
+
+  .MuiTablePagination-root {
+    color: #000 !important;
+    font-family: 'Poppins', sans-serif !important;
+
+    svg {
+      fill: #000 !important;
+    }
+  }
+
+  button:disabled {
+    opacity: 0.4;
+  }
+
+  tbody {
+    tr {
+      @apply bg-secondary;
+
+    }
+
+    td:first-child,
+    th:first-child {
+      border-radius: 10px 0 0 10px;
+    }
+
+    td:last-child,
+    th:last-child {
+      border-radius: 0 10px 10px 0;
+    }
+
+
+    tr>td {
+      font-size: 14px;
+      font-weight: 500 !important;
+      font-family: 'Poppins', sans-serif !important;
+      // color: #fff !important;
+    }
+  }
+
+
+  thead {
+
+    th:first-of-type {
+      // border-radius: 4px 0 0 4px;
+      padding-left: 8px;
+    }
+
+    th:last-of-type {
+      // border-radius: 0 4px 4px 0;
+      text-align: left;
+    }
+
+    th {
+
+      button.MuiButton-root {
+        padding: 0;
+        width: max-content;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #000 !important;
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  td,
+  th {
+    font-weight: 500;
+    color: #fff !important;
+  }
+
+  td>div {
+    padding-left: 0.1rem;
+  }
+
+  .MUIDataTableFilterList-root {
+    gap: 0.5rem;
+    margin: 0;
+    // margin-bottom: 0.5rem;
+  }
+
+  .MuiToolbar-root {
+    padding: 0;
+    flex-wrap: wrap;
+
+    &>div:nth-child(2) {
+      justify-content: flex-end;
+      display: flex;
+    }
+  }
+
+  .drop-down-action,
+  .drop-down-wrapper {
+    width: max-content;
+    margin-left: auto;
+  }
+
+  tfoot.MuiTableFooter-root {
+    td>div {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    @media (max-width: 500px) {
+      .MuiToolbar-root {
+        justify-content: space-between;
+        width: 100%;
+
+        .MuiInputBase-root {
+          margin-right: 0;
+        }
+
+        p {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+}
+
+// .my-table2 {
+//   &.alignLastTdRight {
+//     thead th:last-of-type {
+//       border-radius: 0 4px 4px 0;
+//       text-align: right;
+//     }
+//   }
+
+//   .MuiPaper-root {
+//     box-shadow: none;
+
+//     >div:nth-child(2) {
+//       gap: 1rem;
+//       margin: 0;
+
+//       >div {
+//         margin-bottom: 1rem;
+//       }
+//     }
+//   }
+
+
+
+//   ::-webkit-scrollbar {
+//     width: 0.45rem !important;
+//     height: 0.45rem !important;
+//     @apply bg-gray-100;
+//   }
+
+//   ::-webkit-scrollbar-thumb {
+//     border-radius: 0.25rem !important;
+//     @apply bg-secondary;
+//   }
+
+//   &.hideScrollbar {
+//     ::-webkit-scrollbar {
+//       display: none !important;
+//     }
+//   }
+
+
+//   table {
+//     border-collapse: separate;
+//     border-spacing: 0 15px;
+//     background: transparent !important;
+//     border: none;
+
+
+//   }
+
+
+//   &.scrollX {
+//     .MuiPaper-root div {
+//       table {
+
+//         min-width: 1000px;
+//         // td div {
+//         //   width: max-content;
+//         // }
+//       }
+//     }
+//   }
+
+//   button:disabled {
+//     opacity: 0.4;
+//   }
+
+//   tbody {
+//     tr {
+//       @apply bg-secondary;
+//     }
+
+//     td:first-child,
+//     th:first-child {
+//       border-radius: 10px 0 0 10px;
+//     }
+
+//     td:last-child,
+//     th:last-child {
+//       border-radius: 0 10px 10px 0;
+//     }
+
+
+//     tr>td {
+//       font-size: 14px;
+//       font-weight: 500 !important;
+//       font-family: 'Poppins', sans-serif !important;
+//       color: #fff;
+//       border: none !important;
+//     }
+//   }
+
+
+//   thead {
+
+//     th:first-of-type {
+//       // border-radius: 4px 0 0 4px;
+//       padding-left: 8px;
+//     }
+
+//     th:last-of-type {
+//       // border-radius: 0 4px 4px 0;
+//       text-align: left;
+//     }
+
+//     th {
+
+//       button.MuiButton-root {
+//         padding: 0;
+//         width: max-content;
+//         font-weight: 500;
+//         text-transform: capitalize;
+//         color: #fff !important;
+//         font-size: 16px !important;
+//       }
+//     }
+//   }
+
+//   td,
+//   th {
+//     font-weight: 500;
+//     color: #fff;
+//   }
+
+//   td>div {
+//     padding-left: 0.1rem;
+//   }
+
+//   .MUIDataTableFilterList-root {
+//     gap: 0.5rem;
+//     margin: 0;
+//     // margin-bottom: 0.5rem;
+//   }
+
+//   .MuiToolbar-root {
+//     padding: 0;
+//     flex-wrap: wrap;
+
+//     &>div:nth-child(2) {
+//       justify-content: flex-end;
+//       display: flex;
+//     }
+//   }
+
+//   .drop-down-action,
+//   .drop-down-wrapper {
+//     width: max-content;
+//     margin-left: auto;
+//   }
+
+//   tfoot.MuiTableFooter-root {
+//     td>div {
+//       flex-wrap: wrap;
+//       justify-content: space-between;
+//     }
+
+//     td {
+//       padding: 0;
+//     }
+
+//     @media (max-width: 500px) {
+//       .MuiToolbar-root {
+//         justify-content: space-between;
+//         width: 100%;
+
+//         .MuiInputBase-root {
+//           margin-right: 0;
+//         }
+
+//         p {
+//           width: 50%;
+//         }
+//       }
+//     }
+//   }
+
+//   //  thead .MUIDataTableHeadRow-root .MuiTableRow-root  {
+//   // padding: 24px 12px !important;
+//   // border-bottom: 2px solid #EAECF0;
+//   // }
+// }
+
+.MuiTableCell-root {
+  border: none !important;
+  font-size: 14px;
+  font-weight: 500 !important;
+  font-family: 'Poppins', sans-serif !important;
+  color: #fff !important;
+}
+
+.MuiTableCell-head {
+  background-color: transparent !important;
+
+  &:hover {
+    background-color: transparent !important;
+
+  }
+}
+
+.MuiTable-root {
+  // display: table-header-group;
+  background-color: transparent !important;
+}
+
+.MuiModal-root .MuiPaper-root {
+  fieldset {
+    padding: 1rem;
+  }
+
+  .MuiGrid-root {
+    min-width: 120px;
+  }
+}
+
+.MuiModal-root .MuiPaper-root {
+  fieldset {
+    padding: 1rem;
+  }
+
+  .MuiGrid-root {
+    min-width: 120px;
+  }
+}

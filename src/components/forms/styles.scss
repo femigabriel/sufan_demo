@@ -1,0 +1,177 @@
+.input {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    border-radius: 8px;
+    // border-width: 2px;
+    // border-style: solid;
+    // border-image-slice: 1;
+    // border-image-source: linear-gradient(to left, #15A4FB, #3FF7A6);
+    padding: 16px 17.5px;
+    // border: 2px solid #15A4FB;
+    background-color: #fff;
+    // @apply bg-[#020718] bg-opacity-[23%] border-2 border-[#15A4FB]/50;
+    // opacity: 23%;
+
+}
+
+
+
+.input__box {
+    width: 100%;
+    font-size: 16px;
+    color: #2439AE;
+    font-weight: 500;
+    background-color: transparent !important;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+
+        // color: #cdcdcd;
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-[#2439AE] to-[#0A1A71] font-Inter
+    }
+}
+
+.input__box:focus {
+    outline: none;
+    background-color: transparent !important;
+}
+
+
+.MuiAutocomplete-input {
+    padding: 0 7.5px !important;
+}
+
+.select-mui {
+    padding: 0;
+    width: 100%;
+
+    svg {
+        fill: #858c94;
+    }
+
+    .MuiChip-root {
+        border-radius: 5px !important;
+    }
+
+    .MuiAutocomplete-popper {
+        border-radius: 12px !important;
+        border: 1px solid #eaeaf0 !important;
+        box-shadow: 0px 8px 39px rgba(56, 21, 86, 0.08) !important;
+        font-family: "Poppins", sans-serif !important;
+    }
+
+    .MuiOutlinedInput-root .MuiAutocomplete-input {
+        font-size: 1rem !important;
+        font-family: "Poppins", sans-serif !important;
+
+        &::placeholder {
+            font-size: 14px !important;
+            font-weight: 400 !important;
+            font-family: "Poppins", sans-serif !important;
+        }
+    }
+
+    .MuiOutlinedInput-root {
+        min-height: 3rem !important;
+        height: auto;
+        border-color: #d8d8d8;
+        border-radius: 10px !important;
+    }
+
+    &.autocomplete {
+        .MuiOutlinedInput-root {
+            min-height: 3rem !important;
+            height: auto;
+        }
+    }
+}
+
+.MuiOutlinedInput-root {
+    font-size: 1rem !important;
+    font-family: "Poppins", sans-serif !important;
+
+    &::placeholder {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        font-family: "Poppins", sans-serif !important;
+    }
+}
+
+.MuiOutlinedInput-root {
+    min-height: 3rem !important;
+    height: auto;
+    border-color: #d8d8d8;
+    border-radius: 10px !important;
+}
+
+.menu-item {
+    font-size: 0.9rem !important;
+
+    &.placeholder {
+        color: #696969;
+    }
+}
+
+.MuiAutocomplete-input {
+    input {
+        height: 3rem !important;
+        font-size: 0.5rem !important;
+        font-family: "Poppins", sans-serif !important;
+    }
+}
+
+
+.input-err-msg {
+    @apply text-error mt-1 text-[10px];
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: right;
+}
+
+.search_input {
+    display: flex;
+    max-width: 400px;
+    max-height: 40px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+
+    button {
+        height: 40px;
+        width: 56px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+
+
+    .input__box {
+        width: 100%;
+        border-radius: 8px;
+        max-height: 40px;
+        padding: 12px 10px 12px 20px;
+        border: 2px solid #d8d8d8;
+        font-size: 16px;
+        transition: 0.2s;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right-width: 0;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            color: #696969;
+        }
+    }
+
+    .input__box:focus {
+        // box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+        outline: none;
+    }
+}

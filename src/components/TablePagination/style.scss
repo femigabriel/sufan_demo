@@ -1,0 +1,49 @@
+.pagination-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.2rem 0;
+  margin-left: 1rem;
+  p {
+    font-size: 14px;
+    // color: #53536f;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+
+    span {
+      color: #8585a3;
+    }
+  }
+  button {
+    font-size: 14px;
+    border-radius: 5px;
+    &.Mui-selected,
+    &.MuiPaginationItem-previousNext {
+      @apply bg-primary;
+      color: white;
+      &.Mui-disabled {
+        @apply bg-gray-200;
+        color: black;
+      }
+    }
+  }
+  li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .pagination__select {
+    width: 69px;
+    height: 42px;
+    border: 1px solid #ebf2fa;
+    border-radius: 4px;
+
+  
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+}

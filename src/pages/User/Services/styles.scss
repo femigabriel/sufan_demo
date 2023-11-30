@@ -1,0 +1,128 @@
+.swiper {
+  max-width: 1170px;
+  margin: 0 auto;
+  position: static;
+
+  .swiper-slide {
+    min-height: auto;
+    z-index: 1;
+  }
+}
+
+.swiper-button-prev {
+  background-image: url("/images/arr-left.png") !important;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  width: 52px;
+  top: 59%;
+  // margin-top: -10px;
+  position: absolute;
+  // transform: translateX(-50px);
+  left: -105px;
+}
+
+.swiper-button-next {
+  background-image: url("/images/arr-right.png") !important;
+  background-repeat: no-repeat;
+  width: 52px;
+  top: 56%;
+  margin-top: -10px;
+  // transform: translateX(50px);
+  transform: translateY(-50%);
+  position: absolute;
+  right: -105px;
+  z-index: 9999;
+}
+
+
+@media (max-width: 1400px) {
+  .swiper-button-prev {
+
+    width: 52px;
+    top: 59%;
+    position: absolute;
+    left: -35px;
+  }
+
+  .swiper-button-next {
+
+    width: 52px;
+    top: 56%;
+    // margin-top: -10px;
+    position: absolute;
+    right: -35px;
+    z-index: 9999;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev {
+    display: none;
+
+    // width: 52px;
+    // top: 53%;
+    // margin-top: -5px;
+    // position: absolute;
+    // left: 0px;
+  }
+
+  .swiper-button-next {
+    display: none;
+    // width: 52px;
+    // top: 53%;
+    // // margin-top: 5px;
+    // position: absolute;
+    // right: 0px;
+    // z-index: 9999;
+  }
+}
+
+// .swiper-button-next {
+//     margin-top: 0px;
+//     position: absolute;
+//     top: 50%;
+//     right: -40px;
+//     width: 45px;
+//     height: 45px;
+//     transform: translateY(-50%);
+//   }
+//   .swiper-button-prev {
+//     position: absolute;
+//     top: 50%;
+//     left: -40px;
+//     width: 45px;
+//     height: 45px;
+//     transform: translateY(-50%);
+//     margin-top: 0px;
+//   }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+//   .swiper-button-prev {
+//     color: red;
+// }
+
+// .swiper-button-next {
+//     color: #000;
+// }
+
+// .swiper-slide-next {
+//   width: 418px !important;
+//   height: 587px !important;
+// }
+
+.serviceImage {
+  min-height: 385px !important;
+  border-radius: 15px;
+}
+
+.serviceTextHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // min-height: 385px;
+  height: 100%;
+}
