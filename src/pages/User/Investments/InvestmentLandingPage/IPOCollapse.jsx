@@ -42,7 +42,7 @@ const text = (
         </div>
       </div>
     </div>
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2 gap-2">
       <img
         src="/assets/images/case1.svg"
         className="mb-5"
