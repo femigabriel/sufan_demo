@@ -27,14 +27,14 @@ export const PurchaseForm = () => {
             Fill out forms for purchase
           </h3>
           <form className="py-10 mt-5 shadow-md">
-            <div className="w-full grid grid-cols-4 border-[#EAECF066] border-b-2 py-5">
-              <label className="py-3 px-3 text-xl text-white">
+            <div className="w-full lg:grid lg:grid-cols-4 flex border-[#EAECF066] border-b-2 py-5">
+              <label className="py-3 px-3 lg:text-xl text-sm text-white">
                 Email address
               </label>
-              <Input
+              <input
                 type="email"
                 placeholder="e.g johndoe@lorem.com"
-                className="form-input lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
+                className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
                 pattern="^\S+@\S+\.\S+$"
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -46,61 +46,61 @@ export const PurchaseForm = () => {
                 ""
               )}
             </div>
-            <div className="w-full grid grid-cols-4 border-[#EAECF066] border-b-2 py-5">
-              <label className="py-3 px-3 text-xl text-white">Password</label>
+            <div className="w-full lg:grid lg:grid-cols-4 flex border-[#EAECF066] border-b-2 py-5">
+              <label className="py-3 px-3 lg:text-xl text-sm text-white">Password</label>
               <div className="lg:w-[600px]">
-                <Input
+                <input
                   placeholder="*******"
                   type="password"
-                  className="form-input lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
+                  className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
                 />
-                <p className="mt-2 text-[#D1E4FF] text-[14px]">
+                {/* <p className="mt-2 text-[#D1E4FF] text-[14px]">
                   Your new password must be more than 8 characters.
-                </p>
+                </p> */}
               </div>
             </div>
-            <div className="border-[#EAECF066] border-b-2">
-              <div className="w-full grid grid-cols-4  py-5">
-                <label className="py-3 px-3 text-xl text-white">
+            <div className="border-[#EAECF066] border-b-2 w-full">
+              <div className="w-full lg:grid lg:grid-cols-4 flex py-5">
+                <label className="py-3 px-3 lg:text-xl text-sm text-white">
                   First name
                 </label>
-                <Input
+                <input
                   type="text"
                   placeholder="e.g john"
-                  className="form-input lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
+                  className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
                   pattern="^(?=.{1,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$"
                 />
               </div>
 
-              <div className="w-full grid grid-cols-4  py-5">
-                <label className="py-3 px-3 text-xl text-white">
+              <div className="w-full lg:grid lg:grid-cols-4 flex py-5">
+                <label className="py-3 px-3 lg:text-xl text-sm text-white">
                   Last name
                 </label>
-                <Input
+                <input
                   type="text"
                   placeholder="e.g Doe"
-                  className="form-input lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
+                  className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
                   pattern="^(?=.{1,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$"
                 />
               </div>
 
-              <div className="w-full grid grid-cols-4  py-5">
-                <label className="py-3 px-3 text-xl text-white">
+              <div className="w-full lg:grid lg:grid-cols-4 flex py-5">
+                <label className="py-3 px-3 lg:text-xl text-sm text-white">
                   Phone number
                 </label>
-                <Input
+                <input
                   type="text"
                   placeholder="e.g +1 234567890"
-                  className="form-input lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
+                  className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
                   pattern="^\+[1-9]{1}[0-9]{3,14}$"
                 />
               </div>
 
-              <div className="w-full grid grid-cols-4  py-5">
-                <label className="py-3 px-3 text-xl text-white">
+              <div className="w-full lg:grid lg:grid-cols-4 flex py-5">
+                <label className="py-3 px-3 lg:text-xl text-sm text-white">
                   Mailing address
                 </label>
-                <Input
+                <input
                   type="email"
                   placeholder="e.g johndoe@lorem.com"
                   className="form-input lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
