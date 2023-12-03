@@ -10,12 +10,12 @@ import theme from "../../../../theme";
 // `;
 const text = (
   <div className="py-">
-    <div className="flex py-7  gap-10">
+    <div className="lg:flex py-7  gap-10">
       <img src=" /assets/images/investment1.svg" alt="serviceImage" />
       <div className="lg:w-[36em] px-5">
         <img
           src="/assets/images/image1.png"
-          className="mb-5"
+          className="my-5"
           draggable="false"
 
           alt="image1"
@@ -104,8 +104,8 @@ const IPOCollapse = () => {
     console.log(key);
   };
   return (
-    <div className="w-full">
-      <Space direction="vertical">
+    <div className="w-full flex justify-center">
+      <Space direction="vertical" className="w-full">
         <Collapse
           expandIcon={({ isActive }) =>
             isActive ? (
@@ -206,13 +206,13 @@ const IPOCollapse = () => {
           expandIcon={({ isActive }) =>
             isActive ? (
               <img
-                src="/assets/icons/arrowUp.svg"
+                src="../../src/assets/icons/arrowUp.svg"
                 draggable="false"
                 alt="plusCircle"
               />
             ) : (
               <img
-                src="/assets/icons/arrowDown.svg"
+                src="../../src/assets/icons/arrowDown.svg"
                 draggable="false"
                 alt="minusCircle"
               />

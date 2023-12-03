@@ -140,14 +140,23 @@ const NavBar = ({ type }) => {
                   {/* <Button fullWidth variant="outlined" color="primaryInverse">
                     BOOK APPOINTMENT
                   </Button> */}
-                  <Button
-                    fullWidth
-                    variant="outlined"
-                    href={"/user/services"}
-                    color="primaryInverse"
-                  >
-                    SHOW SERVICES
-                  </Button>
+                  <div className="flex flex-col gap-5">
+                    <Button
+                      fullWidth
+                      variant="outlined"
+                      href={"/user/services"}
+                      color="primaryInverse"
+                    >
+                      SHOW SERVICES
+                    </Button>
+                    <Button
+                      variant="outlined"
+                      href={"/user/investments"}
+                      color="primaryInverse"
+                    >
+                      SHOW INVESTMENTS
+                    </Button>
+                  </div>
                 </>
               )}
               {isLoggedIn && (

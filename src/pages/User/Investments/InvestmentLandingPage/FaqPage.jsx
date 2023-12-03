@@ -69,7 +69,7 @@ export const FaqPage = () => {
         </div>
       </div>
       <div>
-        <Space direction="vertical">
+        <Space direction="vertical" className="w-full">
           <Collapse
             expandIcon={({ isActive }) =>
               isActive ? (

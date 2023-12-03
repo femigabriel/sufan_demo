@@ -43,11 +43,13 @@ export const StartInvestment = () => {
         </div>
       </div>
 
-      <img
+     <div className="flex justify-center items-center">
+     <img
         src="/assets/images/startInvestment.svg"
         draggable="false"
         alt="serviceImage"
       />
+     </div>
     </div>
   );
 };
