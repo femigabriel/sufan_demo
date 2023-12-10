@@ -5,8 +5,8 @@ import theme from "../../../../theme";
 
 export const Newsletter = () => {
   return (
-    <div className="bg-[#062880] py-14 px-20">
-      <div className="flex justify-between">
+    <div className="bg-[#062880] py-14 lg:px-20 px-5">
+      <div className="lg:flex justify-between">
         <div className="text-white">
           <h3 className=" text-xl font-semibold"> Join our newsletter</h3>
           <p className=" text-base">
