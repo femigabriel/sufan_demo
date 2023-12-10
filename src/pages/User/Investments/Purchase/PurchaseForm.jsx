@@ -2,112 +2,84 @@ import React, { useState } from "react";
 import { Input } from "antd";
 import { Button } from "@mui/material";
 import theme from "../../../../theme";
+import TextWithLinesBg from "../../../../components/TextWithLinesBg";
 
 export const PurchaseForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [error, setError] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!name || !email || !phone) {
-      setError(true);
-      return;
-    }
-    onSuccessCallback();
-    e.preventDefault();
-  };
-
   return (
     <div>
-      <main className="lg:px-20 px-5 mx-auto flex flex-col">
-        <section className="">
-          <h3 className="text-[#fff] text-4xl font-semibold">
-            Fill out forms for purchase
-          </h3>
-          <form className="py-10 mt-5 shadow-md">
-            <div className="w-full lg:grid lg:grid-cols-4 flex border-[#EAECF066] border-b-2 py-5">
-              <label className="py-3 px-3 lg:text-xl text-sm text-white">
-                Email address
+      <main className="pt10 lg:pt-0 max-w-[1170px] -mx-4 sm:-mx-6 md:mx-auto flex flex-col items-center">
+        <TextWithLinesBg
+          uppercase={false}
+          text={"Fill out forms for purchase"}
+        />
+
+        <div className="gradietBorder py-[4.5rem] px-4 sm:px-6 w-full max-w-[951px] mxauto before:rounded-[24px] md:rounded-[24px] md:bg-[#16236D]/70 ">
+          <form
+            action=""
+            // onSubmit={methods.handleSubmit(onSubmit)}
+            // className="max-w mx-auto w-full flex flex-col gap-6 md:gap-10 "
+            className="max-w-[512px] mx-auto w-full flex flex-col justifycenter gap-6 md:gap-10 "
+          >
+            <div className="w-full flex flex-col ">
+              <label className="py-3 px-3 text-base text-white font-semibold">
+                Email
               </label>
               <input
                 type="email"
-                placeholder="e.g johndoe@lorem.com"
-                className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
+                placeholder="eample@lorem.com"
+                className="form-input w-full lg:w-[512px] lg:h-[54px] text-base "
                 pattern="^\S+@\S+\.\S+$"
-                onChange={(e) => setEmail(e.target.value)}
               />
-              {error && name.length <= 0 ? (
-                <label className="text-red-400 font-semibold">
-                  This field is required
-                </label>
-              ) : (
-                ""
-              )}
             </div>
-            <div className="w-full lg:grid lg:grid-cols-4 flex border-[#EAECF066] border-b-2 py-5">
-              <label className="py-3 px-3 lg:text-xl text-sm text-white">Password</label>
-              <div className="lg:w-[600px]">
-                <input
-                  placeholder="*******"
-                  type="password"
-                  className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
-                />
-                {/* <p className="mt-2 text-[#D1E4FF] text-[14px]">
-                  Your new password must be more than 8 characters.
-                </p> */}
-              </div>
+
+            <div className="w-full flex flex-col">
+              <label className="py-3 px-3 text-base text-white font-semibold">
+                Password
+              </label>
+              <input
+                placeholder="*******"
+                type="password"
+                className="form-input w-full lg:w-[512px] lg:h-[54px] text-base "
+                // pattern="^\S+@\S+\.\S+$"
+              />
             </div>
-            <div className="border-[#EAECF066] border-b-2 w-full">
-              <div className="w-full lg:grid lg:grid-cols-4 flex py-5">
-                <label className="py-3 px-3 lg:text-xl text-sm text-white">
-                  First name
-                </label>
-                <input
-                  type="text"
-                  placeholder="e.g john"
-                  className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
-                  pattern="^(?=.{1,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$"
-                />
-              </div>
 
-              <div className="w-full lg:grid lg:grid-cols-4 flex py-5">
-                <label className="py-3 px-3 lg:text-xl text-sm text-white">
-                  Last name
-                </label>
-                <input
-                  type="text"
-                  placeholder="e.g Doe"
-                  className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
-                  pattern="^(?=.{1,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$"
-                />
-              </div>
-
-              <div className="w-full lg:grid lg:grid-cols-4 flex py-5">
-                <label className="py-3 px-3 lg:text-xl text-sm text-white">
-                  Phone number
-                </label>
-                <input
-                  type="text"
-                  placeholder="e.g +1 234567890"
-                  className="form-input w-full lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
-                  pattern="^\+[1-9]{1}[0-9]{3,14}$"
-                />
-              </div>
-
-              <div className="w-full lg:grid lg:grid-cols-4 flex py-5">
-                <label className="py-3 px-3 lg:text-xl text-sm text-white">
-                  Mailing address
-                </label>
-                <input
-                  type="email"
-                  placeholder="e.g johndoe@lorem.com"
-                  className="form-input lg:w-[512px] lg:h-[44px] text-[#ffff] text-base"
-                  pattern="^\S+@\S+\.\S+$"
-                />
-              </div>
+            <div className="w-full flex flex-col">
+              <label className="py-3 px-3 text-base text-white font-semibold">
+                First Name
+              </label>
+              <input
+                placeholder="Meghan"
+                type="text"
+                className="form-input w-full lg:w-[512px] lg:h-[54px] text-base "
+                pattern="^(?=.{1,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$"
+              />
             </div>
+
+            <div className="w-full flex flex-col">
+              <label className="py-3 px-3 text-base text-white font-semibold">
+                Last Name
+              </label>
+              <input
+                placeholder="Miller"
+                type="text"
+                className="form-input w-full lg:w-[512px] lg:h-[54px] text-base "
+                pattern="^(?=.{1,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$"
+              />
+            </div>
+
+            <div className="w-full flex flex-col">
+              <label className="py-3 px-3 text-base text-white font-semibold">
+                Phone Number
+              </label>
+              <input
+                type="text"
+                className="form-input w-full lg:w-[512px] lg:h-[54px] text-base "
+                placeholder="+1 234567890"
+                pattern="^\+[1-9]{1}[0-9]{3,14}$"
+              />
+            </div>
+
             <div className="flex justify-between">
               <span></span>
               <div className="flex my-7 justify-center gap-5">
@@ -122,7 +94,7 @@ export const PurchaseForm = () => {
                     border: " 1px solid #15A4FB",
                     fontSize: "16px",
                   }}
-                  onSubmit={handleSubmit}
+                  // onSubmit={handleSubmit}
                 >
                   Book a Session
                 </Button>
@@ -141,8 +113,9 @@ export const PurchaseForm = () => {
               </div>
             </div>
           </form>
-        </section>
+        </div>
       </main>
     </div>
   );
 };
+

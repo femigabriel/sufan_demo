@@ -9,6 +9,8 @@ import { StartInvestment } from "./StartInvestment";
 import React, { useState } from "react";
 import { Slider, Switch } from "antd";
 
+const formatter = (value) => `${value}%`;
+
 export const InvestmentLandingPage = () => {
   const [disabled, setDisabled] = useState(false);
   const onChange = (checked) => {
@@ -32,7 +34,7 @@ export const InvestmentLandingPage = () => {
                 </p>
                 <div className="my-5 lg:my-10 flex justify-center">
                   <Button
-                    href={`/user/investments/purchase`}
+                    href={`/user/login?redirectTo=/user/dashboard`}
                     variant="contained"
                     style={{
                       background: theme.palette.primary.mainGradient,
@@ -75,11 +77,19 @@ export const InvestmentLandingPage = () => {
                   </p>
                 </div>
                 <div className="lg:w-[436px] my-5">
-                  <Slider defaultValue={30} disabled={disabled} />
+                  {/* <Slider defaultValue={30} disabled={disabled} /> */}
+                  <Slider
+                    defaultValue={40}
+                    disabled={disabled}
+                    // min={40}
+                    tooltip={{
+                      formatter,
+                    }}
+                  />
                 </div>
                 <div className="flex justify-center mt-12">
                   <Button
-                    href={`/user/investments/purchase`}
+                    href={`/user/login?redirectTo=/user/dashboard`}
                     variant="contained"
                     style={{
                       background: theme.palette.primary.mainGradient,

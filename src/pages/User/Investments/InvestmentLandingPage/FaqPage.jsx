@@ -53,8 +53,8 @@ export const FaqPage = () => {
             Have questions? We’re here to help.
           </p>
 
-          <idv className="flex justify-center my-7 mb-16">
-            <Input
+          <div className="flex justify-center my-7 mb-16">
+            {/* <Input
               placeholder="Search"
               className="site-form w-[320px] "
               prefix={
@@ -64,8 +64,8 @@ export const FaqPage = () => {
                   alt="searchIcon"
                 />
               }
-            />
-          </idv>
+            /> */}
+          </div>
         </div>
       </div>
       <div>

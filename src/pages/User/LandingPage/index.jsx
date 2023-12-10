@@ -7,6 +7,7 @@ import { ServicesAccordion } from "./widgets/ServicesAccordion";
 import ClientsSay from "./widgets/ClientsSay";
 // import InputField from "../../../components/forms/InputField";
 import "./styles.scss";
+import { ServiceCollapse } from "./widgets/ServiceCollapse";
 
 const LandingPage = () => {
   return (
@@ -183,7 +184,8 @@ const LandingPage = () => {
             </p>
           </div>
 
-          <ServicesAccordion />
+          {/* <ServicesAccordion /> */}
+          <ServiceCollapse />
         </section>
 
         {/* PROJECTS */}
