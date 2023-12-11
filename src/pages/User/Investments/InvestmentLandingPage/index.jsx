@@ -61,52 +61,61 @@ export const InvestmentLandingPage = () => {
                 draggable="false"
               />
             </div>
-            <div className="lg:flex lg:gap-[75px] lg:px-5 px-5 ">
+            <div className="lg:flex justify-between lg:px-20 px-5 ">
               <div className="">
-                <div className="flex">
+                <div className="flex relative lg:left-[350px] lg:my-0 mb-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="101"
+                    height="46"
+                    viewBox="0 0 81 46"
+                    fill="none"
+                    className="lg:mt-2 mt-3"
+                  >
+                    <path
+                      d="M81 1.76465H24.5694L0.999998 44.7646"
+                      stroke="#CDCDCD"
+                      stroke-width="2"
+                      stroke-dasharray="10 10"
+                    />
+                  </svg>
+                  <div className="w-full ml-2">
+                    <span className="text-[#39CEF3] text-2xl font-semibold">
+                      {inputValue}%
+                    </span>
+                    <p className="text-white text-sm">Already Purchased</p>
+                  </div>
+                </div>
+                <div className="lg:flex">
                   <img
                     src="/images/slider-1.png"
                     className="lg:w-full md:w-[85%] sm:w-[65%]"
                     alt="investmentImage"
                     draggable="false"
                   />
-                  <div className="flex relative right-16">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="81"
-                      height="46"
-                      viewBox="0 0 81 46"
-                      fill="none"
-                      className="lg:mt-2"
-                    >
-                      <path
-                        d="M81 1.76465H24.5694L0.999998 44.7646"
-                        stroke="#CDCDCD"
-                        stroke-width="2"
-                        stroke-dasharray="10 10"
-                      />
-                    </svg>
-                    <div className="w-full ml-2">
-                      <span className="text-[#39CEF3] text-2xl font-semibold">
-                        {inputValue}%
-                      </span>
-                      <p className="text-white text-sm w-full">Already Purchased</p>
-                    </div>
-                  </div>
                 </div>
-                <div className="relative flex left-40">
-                  <img
-                    src="/images/available.svg"
-                    className="lg:w-[101px] h-[60px] mt-5"
-                    alt="investmentImage"
-                    draggable="false"
-                  />
-                  <img
-                    src="/images/line.svg"
-                    className="lg:w-[101px] h-[60px]"
-                    alt="investmentImage"
-                    draggable="false"
-                  />
+                <div className="relative flex lg:left-40 mb-20 lg:mb-0">
+                  <div className=" mr-5">
+                    <span className="text-[#39CEF3] text-2xl font-semibold">
+                      40%
+                    </span>
+                    <p className="text-white text-sm">Available Now</p>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="99"
+                    height="40"
+                    viewBox="0 0 99 40"
+                    fill="none"
+                    className=""
+                  >
+                    <path
+                      d="M0 38.7646H65.4408L98 0.764649"
+                      stroke="#CDCDCD"
+                      stroke-width="2"
+                      stroke-dasharray="10 10"
+                    />
+                  </svg>
                 </div>
               </div>
               <div className="lg:mt-14">
