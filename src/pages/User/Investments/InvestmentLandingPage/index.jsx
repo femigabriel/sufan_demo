@@ -7,14 +7,17 @@ import IPOCollapse from "./IPOCollapse";
 import { FaqPage } from "./FaqPage";
 import { StartInvestment } from "./StartInvestment";
 import React, { useState } from "react";
-import { Slider, Switch } from "antd";
+// import { Slider, Switch } from "antd";
+import { Col, InputNumber, Row, Slider, Space } from "antd";
 
 const formatter = (value) => `${value}%`;
 
 export const InvestmentLandingPage = () => {
   const [disabled, setDisabled] = useState(false);
-  const onChange = (checked) => {
-    setDisabled(checked);
+
+  const [inputValue, setInputValue] = useState(40);
+  const onChange = (newValue) => {
+    setInputValue(newValue);
   };
 
   return (
@@ -59,13 +62,30 @@ export const InvestmentLandingPage = () => {
               />
             </div>
             <div className="lg:flex lg:gap-[75px] lg:px-5 pxx-5 ">
-              <img
-                src="/assets/images/chooseImg.png"
-                className="lg:w-full md:w-[85%] sm:w-[65%]"
-                alt="investmentImage"
-                draggable="false"
-              />
-              <div className="lg:mt-32">
+              <div className="">
+                <img
+                  src="/images/slider-1.png"
+                  className="lg:w-full md:w-[85%] sm:w-[65%]"
+                  alt="investmentImage"
+                  draggable="false"
+                />
+
+                <div className="lg:relative flex left-40 mb-5 lg:mb-0">
+                  <img
+                    src="/images/available.svg"
+                    className="lg:w-[101px] h-[60px] mt-5"
+                    alt="investmentImage"
+                    draggable="false"
+                  />
+                  <img
+                    src="/images/line.svg"
+                    className="lg:w-[101px] h-[60px]"
+                    alt="investmentImage"
+                    draggable="false"
+                  />
+                </div>
+              </div>
+              <div className="lg:mt-14">
                 <h3 className="text-white lg:text-[1.65em] md:text-4xl sm:text-xl mb-3 tracking-[-2%]">
                   Choose your percentage
                 </h3>
@@ -77,15 +97,38 @@ export const InvestmentLandingPage = () => {
                   </p>
                 </div>
                 <div className="lg:w-[436px] my-5">
-                  {/* <Slider defaultValue={30} disabled={disabled} /> */}
-                  <Slider
-                    defaultValue={40}
-                    disabled={disabled}
-                    // min={40}
-                    tooltip={{
-                      formatter,
-                    }}
-                  />
+                  <Row>
+                    <Col span={16}>
+                      {/* <Slider
+                        min={1}
+                        max={20}
+                        onChange={onChange}
+                        value={typeof inputValue === "number" ? inputValue : 0}
+                      /> */}
+                      <Slider
+                        defaultValue={40}
+                        disabled={disabled}
+                        tooltip={{
+                          formatter,
+                        }}
+                        min={40}
+                        max={100}
+                        onChange={onChange}
+                        value={typeof inputValue === "number" ? inputValue : 0}
+                      />
+                    </Col>
+                    <Col span={4}>
+                      <InputNumber
+                        min={40}
+                        max={100}
+                        style={{
+                          margin: "0 16px",
+                        }}
+                        value={inputValue}
+                        onChange={onChange}
+                      />
+                    </Col>
+                  </Row>
                 </div>
                 <div className="flex justify-center mt-12">
                   <Button
@@ -107,7 +150,7 @@ export const InvestmentLandingPage = () => {
           <section className="py-10 w-full">
             <div className="flex justify-center py-7 pb-10">
               <div>
-                <h3 className="text-white lg:text-5xl md:text-4xl sm:text-xl mb-3 tracking-[-2%] mb-5 text-center">
+                <h3 className="text-white lg:text-5xl md:text-4xl sm:text-xl tracking-[-2%] mb-5 text-center">
                   Choose your IPO
                 </h3>
                 <p className="text-[#D1E4FF] text-lg lg:w-[40em] font-normal lg:px-7 text-center">

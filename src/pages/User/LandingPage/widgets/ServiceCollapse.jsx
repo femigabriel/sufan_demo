@@ -5,7 +5,7 @@ const items = [
   {
     key: "1",
     label: (
-      <div className="w-full flex justify-between">
+      <div className="w-full lg:flex justify-between">
         <div className="flex gap-5">
           <svg
             width="46"
@@ -49,7 +49,7 @@ const items = [
   {
     key: "2",
     label: (
-      <div className="w-full flex justify-between">
+      <div className="w-full lg:flex justify-between">
         <div className="flex gap-5">
           <svg
             width="40"
@@ -94,7 +94,7 @@ const items = [
   {
     key: "3",
     label: (
-      <div className="w-full flex justify-between">
+      <div className="w-full lg:flex justify-between">
         <div className="flex gap-5">
           <svg
             width="46"
@@ -141,7 +141,7 @@ const items = [
   {
     key: "4",
     label: (
-      <div className="w-full flex justify-between">
+      <div className="w-full lg:flex justify-between">
         <div className="flex gap-5">
           <svg
             width="40"
