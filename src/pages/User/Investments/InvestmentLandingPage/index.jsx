@@ -153,7 +153,7 @@ export const InvestmentLandingPage = () => {
                       />
                     </Col>
                     <Col span={4}>
-                      <InputNumber
+                      {/* <InputNumber
                         min={40}
                         max={100}
                         style={{
@@ -161,7 +161,10 @@ export const InvestmentLandingPage = () => {
                         }}
                         value={inputValue}
                         onChange={onChange}
-                      />
+                      /> */}
+                      <div className="mt-1">
+                        <span className="text-white ">100%</span>
+                      </div>
                     </Col>
                   </Row>
                 </div>
