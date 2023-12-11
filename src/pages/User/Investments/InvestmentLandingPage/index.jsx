@@ -61,7 +61,7 @@ export const InvestmentLandingPage = () => {
                 draggable="false"
               />
             </div>
-            <div className="lg:flex justify-between lg:px-20 px-5 ">
+            <div className="lg:flex justify-between lg:px-24 px-5 ">
               <div className="">
                 <div className="flex relative lg:left-[350px] lg:my-0 mb-5">
                   <svg
