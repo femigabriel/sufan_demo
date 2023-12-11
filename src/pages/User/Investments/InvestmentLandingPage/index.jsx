@@ -23,7 +23,7 @@ export const InvestmentLandingPage = () => {
   return (
     <div>
       <InvestmentLandingPageLayout>
-        <main className="max-w-[1170px] mx-auto flex flex-col">
+        <main className="max-w-[1170p] w-full mx-auto flex flex-col">
           <section className="">
             <div className="flex justify-center">
               <div>
@@ -52,7 +52,7 @@ export const InvestmentLandingPage = () => {
             </div>
           </section>
 
-          <section className="flex flex-col gap-6 md:gap-10">
+          <section className="flex flex-col gap-6 md:gap-10 w-full">
             <div className="flex justify-center items-center">
               <img
                 src="/assets/images/investmentImg.svg"
@@ -61,16 +61,40 @@ export const InvestmentLandingPage = () => {
                 draggable="false"
               />
             </div>
-            <div className="lg:flex lg:gap-[75px] lg:px-5 pxx-5 ">
+            <div className="lg:flex lg:gap-[75px] lg:px-5 px-5 ">
               <div className="">
-                <img
-                  src="/images/slider-1.png"
-                  className="lg:w-full md:w-[85%] sm:w-[65%]"
-                  alt="investmentImage"
-                  draggable="false"
-                />
-
-                <div className="lg:relative flex left-40 mb-5 lg:mb-0">
+                <div className="flex">
+                  <img
+                    src="/images/slider-1.png"
+                    className="lg:w-full md:w-[85%] sm:w-[65%]"
+                    alt="investmentImage"
+                    draggable="false"
+                  />
+                  <div className="flex relative right-16">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="81"
+                      height="46"
+                      viewBox="0 0 81 46"
+                      fill="none"
+                      className="lg:mt-2"
+                    >
+                      <path
+                        d="M81 1.76465H24.5694L0.999998 44.7646"
+                        stroke="#CDCDCD"
+                        stroke-width="2"
+                        stroke-dasharray="10 10"
+                      />
+                    </svg>
+                    <div className="w-full ml-2">
+                      <span className="text-[#39CEF3] text-2xl font-semibold">
+                        {inputValue}%
+                      </span>
+                      <p className="text-white text-sm w-full">Already Purchased</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative flex left-40">
                   <img
                     src="/images/available.svg"
                     className="lg:w-[101px] h-[60px] mt-5"
@@ -97,14 +121,16 @@ export const InvestmentLandingPage = () => {
                   </p>
                 </div>
                 <div className="lg:w-[436px] my-5">
+                  {/* <Slider defaultValue={30} disabled={disabled} /> */}
+                  {/* <Slider
+                    defaultValue={40}
+                    disabled={disabled}
+                    tooltip={{
+                      formatter,
+                    }}
+                  /> */}
                   <Row>
                     <Col span={16}>
-                      {/* <Slider
-                        min={1}
-                        max={20}
-                        onChange={onChange}
-                        value={typeof inputValue === "number" ? inputValue : 0}
-                      /> */}
                       <Slider
                         defaultValue={40}
                         disabled={disabled}
