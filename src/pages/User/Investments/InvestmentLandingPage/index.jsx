@@ -146,7 +146,7 @@ export const InvestmentLandingPage = () => {
                         tooltip={{
                           formatter,
                         }}
-                        min={40}
+                        min={0}
                         max={100}
                         onChange={onChange}
                         value={typeof inputValue === "number" ? inputValue : 0}
