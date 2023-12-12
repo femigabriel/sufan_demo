@@ -78,7 +78,7 @@ const LoginPage = () => {
                 placeholder="******"
               />
               <LoadingButton
-                href={`/user/investments/purchase`}
+                // href={`/user/investments/purchase`}
                 loadingIndicator={
                   <CircularProgress
                     sx={{
