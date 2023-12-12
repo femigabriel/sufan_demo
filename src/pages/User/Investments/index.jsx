@@ -20,45 +20,45 @@ const items = [
       />
     ),
   },
-  {
-    id: 2,
-    title: "VaccuMizer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.",
-    serviceImage: (
-      <img
-        src="/assets/images/investment1.svg"
-        alt="serviceImage"
-        className=" rounded-[15px] min-w-full h-full object-contain"
-      />
-    ),
-  },
-  {
-    id: 3,
-    title: "Bernandazzi",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.",
-    serviceImage: (
-      <img
-        src="/assets/images/investment1.svg"
-        alt="serviceImage"
-        className=" rounded-[15px] min-w-full h-full object-contain"
-      />
-    ),
-  },
-  {
-    id: 4,
-    title: "Minellium",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.",
-    serviceImage: (
-      <img
-        src="/assets/images/investment1.svg"
-        alt="serviceImage"
-        className=" rounded-[15px] min-w-full h-full object-contain"
-      />
-    ),
-  },
+  // {
+  //   id: 2,
+  //   title: "VaccuMizer",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.",
+  //   serviceImage: (
+  //     <img
+  //       src="/assets/images/investment1.svg"
+  //       alt="serviceImage"
+  //       className=" rounded-[15px] min-w-full h-full object-contain"
+  //     />
+  //   ),
+  // },
+  // {
+  //   id: 3,
+  //   title: "Bernandazzi",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.",
+  //   serviceImage: (
+  //     <img
+  //       src="/assets/images/investment1.svg"
+  //       alt="serviceImage"
+  //       className=" rounded-[15px] min-w-full h-full object-contain"
+  //     />
+  //   ),
+  // },
+  // {
+  //   id: 4,
+  //   title: "Minellium",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper, dui sit amet molestie tincidunt, sapien dui auctor quam, in feugiat massa dui ut leo.",
+  //   serviceImage: (
+  //     <img
+  //       src="/assets/images/investment1.svg"
+  //       alt="serviceImage"
+  //       className=" rounded-[15px] min-w-full h-full object-contain"
+  //     />
+  //   ),
+  // },
 ];
 export const InvestmentsPage = () => {
   return (
