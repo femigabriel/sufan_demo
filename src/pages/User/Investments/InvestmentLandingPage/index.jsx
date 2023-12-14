@@ -108,7 +108,7 @@ export const InvestmentLandingPage = () => {
                     <p className="text-white text-sm">Already Purchased</p>
                   </div>
                 </div>
-                <div className="lg:flex">
+                <div className="lg:flex justify-between">
                   <img
                     src="/images/slider-1.png"
                     className="lg:w-full md:w-[85%] sm:w-[65%] x-transition"
@@ -140,6 +140,7 @@ export const InvestmentLandingPage = () => {
                     />
                   </svg>
                 </div>
+
               </div>
               <div className="lg:mt-14">
                 <h3 className="text-white lg:text-[1.65em] md:text-4xl sm:text-xl mb-3 tracking-[-2%]">
