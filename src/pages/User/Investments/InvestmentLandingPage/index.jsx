@@ -41,7 +41,7 @@ export const InvestmentLandingPage = () => {
       setValue1([value1[0], Math.max(newValue[1], value1[0] + minDistance)]);
     }
   };
-  
+
   return (
     <div>
       <InvestmentLandingPageLayout>
@@ -111,8 +111,11 @@ export const InvestmentLandingPage = () => {
                 <div className="lg:flex">
                   <img
                     src="/images/slider-1.png"
-                    className="lg:w-full md:w-[85%] sm:w-[65%]"
+                    className="lg:w-full md:w-[85%] sm:w-[65%] x-transition"
                     alt="investmentImage"
+                    style={{
+                      transform: `rotate(${0 - parseFloat(value1[1]) / 10}deg)`,
+                    }}
                     draggable="false"
                   />
                 </div>
