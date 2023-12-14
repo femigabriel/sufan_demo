@@ -113,9 +113,7 @@ export const InvestmentLandingPage = () => {
                     src="/images/slider-1.png"
                     className="lg:w-full md:w-[85%] sm:w-[65%] x-transition"
                     alt="investmentImage"
-                    style={{
-                      transform: `rotate(${0 - parseFloat(value1[1]) / 10}deg)`,
-                    }}
+                    style={{ transform: `rotate(${0-(parseFloat(value1[1])/10)}deg)` }}
                     draggable="false"
                   />
                 </div>
@@ -167,7 +165,7 @@ export const InvestmentLandingPage = () => {
                       />
 
                       <div className="mt-1">
-                        <span className="text-white ">100%</span>
+                        <span className="text-[#39CEF3]">100%</span>
                       </div>
                     </div>
                   </Box>
