@@ -83,7 +83,7 @@ export const InvestmentLandingPage = () => {
                 draggable="false"
               />
             </div>
-            <div className="lg:flex justify-between lg:px-24 px-5 ">
+            <div className="lg:flex justify-between lg:px-2 px-5 ">
               <div className="">
                 <div className="flex relative lg:left-[350px] lg:my-0 mb-5">
                   <svg
@@ -108,7 +108,7 @@ export const InvestmentLandingPage = () => {
                     <p className="text-white text-sm">Already Purchased</p>
                   </div>
                 </div>
-                <div className="lg:flex justify-between">
+                <div className="lg:flex">
                   <img
                     src="/images/slider-1.png"
                     className="lg:w-full md:w-[85%] sm:w-[65%] x-transition"
