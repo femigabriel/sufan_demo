@@ -15,14 +15,14 @@ const NavBar = ({ type }) => {
 
   return (
     <main className="">
-      <nav className="hidden min-[980px]:flex  justify-between items-cnter w-full max-w-[1170px] mx-auto py-6">
+      <nav className="hidden min-[980px]:flex  justify-between items-cnter w-full max-w-[1170p] mx-auto py-6">
         <div className="flex gap-5 itemscenter">
-          <Link to={"/"}>
+          <Link to={"/"} className="flex gap-5">
             <img src="/logo_v2.png" alt="logo" className="mainLogo" />
+            <p className="font-bold self-end text-white font-Inter text-4xl">
+              Bles Client Platform
+            </p>
           </Link>
-          <p className="font-bold self-end text-white font-Inter text-4xl">
-            Bles Client Platform
-          </p>
         </div>
 
         <div className="flex gap-4 self-end items-center">
@@ -51,6 +51,13 @@ const NavBar = ({ type }) => {
                 color="primaryInverse"
               >
                 SHOW INVESTMENTS
+              </Button>
+              <Button
+                variant="outlined"
+                href={"/user/login?redirectTo=/user/dashboard"}
+                color="primaryInverse"
+              >
+                LOGIN
               </Button>
             </>
           )}
@@ -155,6 +162,13 @@ const NavBar = ({ type }) => {
                       color="primaryInverse"
                     >
                       SHOW INVESTMENTS
+                    </Button>
+                    <Button
+                      variant="outlined"
+                      href={"/user/login?redirectTo=/user/dashboard"}
+                      color="primaryInverse"
+                    >
+                      LOGIN
                     </Button>
                   </div>
                 </>

@@ -18,7 +18,7 @@ export const StartInvestment = () => {
         </div>
         <div className="flex my-7 justify-center gap-5">
           <Button
-            href={`/user/investments/landing-page`}
+            href={`/user/investments`}
             variant="contained"
             style={{
               background: "#ffff",
@@ -30,7 +30,7 @@ export const StartInvestment = () => {
             Learning More
           </Button>
           <Button
-            href={`/user/investments/landing-page`}
+            href={`/user/investments`}
             variant="contained"
             style={{
               background: theme.palette.primary.mainGradient,

@@ -8,7 +8,9 @@ import { FaqPage } from "./FaqPage";
 import { StartInvestment } from "./StartInvestment";
 import React, { useState } from "react";
 // import { Slider, Switch } from "antd";
-import { Col, InputNumber, Row, Slider, Space } from "antd";
+// import { Col, InputNumber, Row, Slider, Space } from "antd";
+import Box from "@mui/material/Box";
+import Slider from "@mui/material/Slider";
 
 const formatter = (value) => `${value}%`;
 
@@ -20,6 +22,26 @@ export const InvestmentLandingPage = () => {
     setInputValue(newValue);
   };
 
+  function valuetext(value) {
+    return `${value}°%`;
+  }
+
+  const minDistance = 40;
+
+  const [value1, setValue1] = useState([0, 40]);
+
+  const handleChange1 = (event, newValue, activeThumb) => {
+    if (!Array.isArray(newValue)) {
+      return;
+    }
+
+    if (activeThumb === 0) {
+      setValue1([Math.min(newValue[0], value1[1] - minDistance), value1[1]]);
+    } else {
+      setValue1([value1[0], Math.max(newValue[1], value1[0] + minDistance)]);
+    }
+  };
+  
   return (
     <div>
       <InvestmentLandingPageLayout>
@@ -80,8 +102,8 @@ export const InvestmentLandingPage = () => {
                     />
                   </svg>
                   <div className="w-full ml-2">
-                    <span className="text-[#39CEF3] text-2xl font-semibold">
-                      {inputValue}%
+                    <span className="text-[#39CEF3] text-2xl font-semibold ">
+                      {value1[1]}%
                     </span>
                     <p className="text-white text-sm">Already Purchased</p>
                   </div>
@@ -130,15 +152,23 @@ export const InvestmentLandingPage = () => {
                   </p>
                 </div>
                 <div className="lg:w-[436px] my-5">
-                  {/* <Slider defaultValue={30} disabled={disabled} /> */}
-                  {/* <Slider
-                    defaultValue={40}
-                    disabled={disabled}
-                    tooltip={{
-                      formatter,
-                    }}
-                  /> */}
-                  <Row>
+                  <Box sx={{ width: 450 }}>
+                    <div className="flex gap-5">
+                      <Slider
+                        getAriaLabel={() => "Minimum distance"}
+                        value={value1}
+                        onChange={handleChange1}
+                        valueLabelDisplay="auto"
+                        getAriaValueText={valuetext}
+                        disableSwap
+                      />
+
+                      <div className="mt-1">
+                        <span className="text-white ">100%</span>
+                      </div>
+                    </div>
+                  </Box>
+                  {/* <Row>
                     <Col span={16}>
                       <Slider
                         defaultValue={40}
@@ -151,22 +181,23 @@ export const InvestmentLandingPage = () => {
                         onChange={onChange}
                         value={typeof inputValue === "number" ? inputValue : 0}
                       />
+                      <input
+                        type="range"
+                        className="w-full"
+                        min="0" 
+                        max="100"
+                        tooltip={{
+                          formatter,
+                        }}
+                      />
                     </Col>
                     <Col span={4}>
-                      {/* <InputNumber
-                        min={40}
-                        max={100}
-                        style={{
-                          margin: "0 16px",
-                        }}
-                        value={inputValue}
-                        onChange={onChange}
-                      /> */}
+                    
                       <div className="mt-1">
                         <span className="text-white ">100%</span>
                       </div>
                     </Col>
-                  </Row>
+                  </Row> */}
                 </div>
                 <div className="flex justify-center mt-12">
                   <Button
