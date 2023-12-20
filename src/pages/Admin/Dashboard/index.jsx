@@ -20,7 +20,7 @@ const Dashboard = () => {
       >
         <div className="max-w-[1170px] mx-auto">
           <h1 className="font-extrabold text-4xl md:text-5xl lg:text-[4rem]">
-            Welcome back,{" "}
+            Welcome back,
             <span className="capitalize"> {user?.fullName?.split(" ")[0]}</span>
             !
           </h1>
@@ -30,13 +30,13 @@ const Dashboard = () => {
 
           <div className="flex justify-between">
             <SearchInput className="search bg-[#020718] !text-[#c8c8c8] bg-opacity-[23%] !max-w-[300px] border-2 border-[#15A4FB]/50" />
-            <Button
+            {/* <Button
               variant="outlined"
               href={"/user/investments/purchase"}
               color="primaryInverse"
             >
               PURCHASE INVESTMENT
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>

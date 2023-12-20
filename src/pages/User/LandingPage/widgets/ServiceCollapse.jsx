@@ -192,18 +192,14 @@ export const ServiceCollapse = () => {
       <Collapse
         items={items}
         // defaultActiveKey={["1"]}
-        activeKey={['1','2','3', '4']}
+        activeKey={["1", "2", "3", "4"]}
         expandIconPosition="right"
         expandIcon={({ isActive }) =>
           isActive ? (
-            <img
-              src="../../src/assets/icons/arrowUp.svg"
-              draggable="false"
-              alt="plusCircle"
-            />
+            <img src="/images/arrowUp.svg" draggable="false" alt="plusCircle" />
           ) : (
             <img
-              src="../../src/assets/icons/arrowDown.svg"
+              src="/images/arrowDown.svg"
               draggable="false"
               alt="minusCircle"
             />

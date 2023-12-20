@@ -45,13 +45,13 @@ const NavBar = ({ type }) => {
                 SHOW SERVICES
               </Button>
 
-              <Button
+              {/* <Button
                 variant="outlined"
                 href={"/user/investments"}
                 color="primaryInverse"
               >
                 SHOW INVESTMENTS
-              </Button>
+              </Button> */}
               <Button
                 variant="outlined"
                 href={"/user/login?redirectTo=/user/dashboard"}
